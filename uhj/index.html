@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>≠</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+      box-sizing: border-box;
+    }
+    div:after, div:before{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .conteiner{
+      width: 960px;
+      border: 2px solid red;
+      margin: auto;
+      padding: 5px;
+    }
+    .block{
+      width: 100%;
+      padding: 10px;
+      border: 2px solid red;
+      margin-top: 5px;
+    }
+    .col{
+      height: 90px;
+      border: 2px solid red;
+      float: left;
+    }
+    .col:nth-child(1){
+      width: 20%;
+      padding: 0 10px;
+
+    }
+
+    .col:nth-child(2){
+      width: 80%;
+    }
+    .block_logo{
+      width: 100%;
+      height: 45px;
+      margin-top: 20px;
+      border: 2px solid red;
+    }
+    .row {
+      float: left;
+      padding: 0 5px;
+    }
+    .col1{
+
+      height: 500px;
+      border: 2px solid red;
+    }
+    .row:nth-child(2){
+      width: 20%;
+
+    }
+
+    .row:nth-child(1){
+      width: 80%;
+    }
+    .row1 {
+      float: left;
+      padding: 0 5px;
+      width: 50%;
+    }
+    .col2{
+
+      height: 50px;
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="block">
+      <div class="col">
+        <div class="block_logo"></div>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div class="block">
+      <div class="row">
+        <div class="col1"></div>
+      </div>
+      <div class="row">
+        <div class="col1"></div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="row1">
+        <div class="col2"></div>
+      </div>
+      <div class="row1">
+        <div class="col2"></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
